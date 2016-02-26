@@ -6,6 +6,9 @@ import os
 import pytest
 
 
+pytest_plugins = 'pytester'
+
+
 @pytest.mark.parametrize('marker, runs', [
     ('posix', os.name == 'posix'),
     ('windows', os.name == 'nt'),
