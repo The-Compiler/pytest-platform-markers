@@ -23,7 +23,7 @@ setup(
     description='Markers for pytest to skip tests on specific platforms',
     long_description=read('README.rst'),
     py_modules=['pytest_platform_markers'],
-    install_requires=['pytest>=2.8.1'],
+    install_requires=['pytest>=3.6.0'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',

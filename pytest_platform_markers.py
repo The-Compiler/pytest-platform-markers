@@ -29,7 +29,7 @@ def pytest_configure(config):
 def pytest_collection_modifyitems(items):
     for item in items:
         for searched_marker, condition, default_reason in MARKERS:
-            marker = item.get_marker(searched_marker)
+            marker = item.get_closest_marker(searched_marker)
             if not marker:
                 continue
 
