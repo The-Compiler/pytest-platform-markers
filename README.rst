@@ -41,6 +41,22 @@ Contributing
 Contributions are very welcome. Tests can be run with `tox`_, please ensure
 the coverage at least stays the same before you submit a pull request.
 
+Changes
+-------
+
+v1.0.0 (unreleased)
+^^^^^^^^^^^^^^^^^^^
+
+- Added support for pytest >= 4.0
+- Added support Python 3.6 and 3.7
+- Dropped support for pytest < 3.6
+- Dropped support for Python 3.3 and 3.4
+
+v0.1.0
+^^^^^^
+
+- Initial release
+
 License
 -------
 
