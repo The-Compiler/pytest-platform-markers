@@ -88,7 +88,7 @@ def test_parametrize(monkeypatch, testdir):
 
         mark = pytest.mark.ci()
 
-        @pytest.mark.parametrize('x', [mark('a'), 'b'])
+        @pytest.mark.parametrize('x', [pytest.param('a', marks=mark), 'b'])
         def test_foo(x):
             pass
     """)
@@ -111,9 +111,9 @@ def test_reason(monkeypatch, testdir, arg):
 
     result = testdir.runpytest('-rs')
     if arg:
-        msg = 'SKIP [1] test_reason.py:2: Only runs on CI: Hello World'
+        msg = 'SKIPPED [1] test_reason.py:3: Only runs on CI: Hello World'
     else:
-        msg = 'SKIP [1] test_reason.py:2: Only runs on CI.'
+        msg = 'SKIPPED [1] test_reason.py:3: Only runs on CI.'
     result.stdout.fnmatch_lines([msg])
 
 
