@@ -13,7 +13,7 @@ def read(fname):
 
 setup(
     name='pytest-platform-markers',
-    version='0.1.0',
+    version='1.0.0',
     author='Florian Bruhin',
     author_email='me@the-compiler.org',
     maintainer='Florian Bruhin',

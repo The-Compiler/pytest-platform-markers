@@ -44,8 +44,8 @@ the coverage at least stays the same before you submit a pull request.
 Changes
 -------
 
-v1.0.0 (unreleased)
-^^^^^^^^^^^^^^^^^^^
+v1.0.0
+^^^^^^
 
 - Added support for pytest >= 4.0
 - Added support Python 3.6 and 3.7
