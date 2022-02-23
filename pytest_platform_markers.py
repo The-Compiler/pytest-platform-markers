@@ -11,6 +11,7 @@ MARKERS = [
     ('windows', "os.name != 'nt'", "Requires Windows"),
     ('linux', "not sys.platform.startswith('linux')", "Requires Linux"),
     ('osx', "sys.platform != 'darwin'", "Requires OS X"),
+    ('not_linux', "sys.platform.startswith('linux')", "Skipped on Linux"),
     ('not_osx', "sys.platform == 'darwin'", "Skipped on OS X"),
     ('not_frozen', "getattr(sys, 'frozen', False)",
         "Can't be run when frozen"),
